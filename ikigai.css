@@ -1,0 +1,252 @@
+* {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-size: cover;
+}
+
+.introduction {
+  text-align: center;
+  height: 100vh;
+  background-image: url("./images/bridge.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-size: cover;
+  width: 100%;
+  justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+  .introduction {
+    text-align: center;
+    height: 100vh;
+    background-image: url("./images/bridgemob.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-size: cover;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.introduction a {
+  color: #f3f3f3;
+  text-decoration: none;
+  position: absolute;
+  bottom: 30px;
+  left: auto;
+  right: 29%;
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.page-title {
+  color: #f3f3f3;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-size: 82px;
+}
+
+.page-title-description {
+  color: #f3f3f3;
+  margin: 0;
+  border: 0;
+  padding: 500;
+  font-size: 30px;
+  width: 500px;
+}
+
+.aboutme-flexbox {
+  display: flex;
+  background-color: #236a84;
+  color: #f3f3f3;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.aboutme-text {
+  padding: 10px;
+  margin: 75px 0px 75px 0px;
+  height: 100%;
+  width: 50%;
+}
+
+.oliver-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50% 10%;
+  object-fit: cover;
+  overflow: hidden;
+  margin: 50px 0px 50px 0px;
+  padding: 10px;
+  float: left;
+}
+
+.portfolio-header {
+  height: 20vh;
+  background: #333333;
+  display: flex;
+  color: #f3f3f3;
+  width: 100%;
+  justify-content: space-around;
+  padding: 50px 0px 0px 0px;
+}
+
+@media screen and (max-width: 900px) {
+  .portfolio-header {
+    display: block;
+    width: 100%;
+    max-height: 50px;
+  }
+}
+
+.portfolio-flexbox {
+  height: 350px;
+  background: #333333;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 900px) {
+  .portfolio-flexbox {
+    display: block;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.portfolio-text {
+  text-align: center;
+  color: #f3f3f3;
+  padding: 10px;
+  margin: 75px 0px 75px 0px;
+  height: 100%;
+  width: 50%;
+}
+
+.portfolio-flexbox .button {
+  font: bold 16px Arial;
+  background-color: #f3f3f3;
+  padding: 20px;
+  border-radius: 12px;
+  color: #333333;
+  text-decoration: none;
+  margin: 20% 10%;
+}
+
+.portfolio-image {
+  max-width: 50vh;
+  max-height: auto;
+  padding: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .portfolio-image {
+    display: block;
+    max-width: 40vh;
+    text-align: center;
+    padding-left: 20%;
+  }
+}
+
+.github-div {
+  justify-content: center;
+  text-align: center;
+  width: 30%;
+}
+
+@media screen and (min-width: 900px) {
+  .github-div {
+    display: block;
+    width: 100%;
+  }
+}
+
+.codewars-div {
+  justify-content: center;
+  text-align: center;
+  width: 30%;
+}
+
+@media screen and (min-width: 900px) {
+  .codewars-div {
+    display: block;
+    width: 100%;
+  }
+}
+
+.codewars-div .button {
+  font: bold 16px Arial;
+  background-color: #f3f3f3;
+  padding: 12px;
+  border-radius: 10px;
+  color: #333333;
+  text-decoration: none;
+  margin: 10% 3%;
+}
+
+.fcc-div {
+  justify-content: center;
+  text-align: center;
+  width: 30%;
+}
+
+@media screen and (min-width: 900px) {
+  .fcc-div {
+    display: block;
+    width: 100%;
+  }
+}
+
+.jff {
+  background-color: #cecece;
+  background-image: url("./images/magic8.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-size: cover;
+  width: 100%;
+}
+.jff-header {
+  color: #f3f3f3;
+  text-align: center;
+  padding: 40px 0px 0px 0px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.magic8 {
+  border-radius: 12px;
+  background-color: #236a84;
+  padding: 10px;
+  color: #f3f3f3;
+  text-align: center;
+  margin: 50px 20%;
+}
+
+.magic8-input {
+  font: bold 16px Arial;
+  background-color: #f3f3f3;
+  color: #333333;
+  padding: 20px;
+  border-radius: 12px;
+  text-decoration: none;
+}
+.magic8-answer {
+  color: #333333;
+}

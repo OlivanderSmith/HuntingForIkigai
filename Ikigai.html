@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--This is the first webpage I've ever created-->
+<html>
+
+<head>
+    <title>Oliver Smith | Hunting for Ikigai</title>
+    <link href="./ikigai.css" type="text/css" rel="stylesheet">
+    <script src='./magic8.js' type='text/javascript' /></script>
+    <link rel="icon" href="https://dumielauxepices.net/sites/default/files/hand-emoji-clipart-single-hand-632544-492960.png">
+</head>
+<!-- Body starts here-->
+
+<body>
+
+    <!-- INTRODUCTION-->
+    <div class="introduction" class="top">
+        <br></br>
+        <h1 class="uppercase page-title">Hunting for Ikigai</h1>
+        <br></br>
+        <br></br>
+        <br></br>
+        <a href='https://en.wikipedia.org/wiki/Ikigai' target="_blank">生き甲斐 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"a reason for being"</a>
+    </div>
+
+    <!-- ABOUT ME-->
+    <div class=aboutme-flexbox>
+
+        <div class='aboutme-text'>
+            <h1>Hi, I'm Oliver</h1>
+            <br></br>
+            <p>Coding, Jiu-Jitsu, Star Wars, coffee, guitar, and books...that's about it</p>
+        </div>
+        <div>
+            <img class='oliver-img' src="./images/oliver.jpg" />
+        </div>
+    </div>
+
+    <!-- PORTFOLIO-->
+    <div class=portfolio>
+        <div class='portfolio-header'>
+            <h1>Portfolio</h1>
+        </div>
+
+        <div class=portfolio-flexbox>
+
+            <div class='github-div'>
+                <img class='portfolio-image' src="./images/github-logo.png" />
+
+                <a class=button href="https://github.com/OlivanderSmith/huntingforikigai" target="_blank">My Repository</a>
+            </div>
+
+            <div class='codewars-div'>
+                <img class='portfolio-image' src="./images/codewars.png" />
+
+                <br></br>
+                <a class=button href="https://www.codewars.com/users/OlivanderSmith" target="_blank">My Profile</a>
+
+                <a class=button href="https://www.codewars.com/kata/5b71b8678adeae2fb0000103" target="_blank">My Kata</a>
+            </div>
+
+            <div class='fcc-div'>
+                <img class='portfolio-image' src="./images/fcc-logo.png" />
+                <br></br>
+                <a class=button href="https://www.freecodecamp.org/fcc960ac735-6517-4a61-be12-fafcf60ffa21" target="_blank">My FCC profile</a>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!--JUST FOR FUN-->
+    <div class='jff'>
+
+        <h1 class='jff-header'> Just for fun...</h1>
+
+        <div class='magic8' class='flex-container'>
+            <br></br>
+            <h2> Magic 8</h2>
+            <br></br>
+            <p>I've embedded some magical power into this code... Ask the 8 Ball a question</p>
+            <br></br>
+
+            <input class='magic8-input' type="text" name="magic8-question" placeholder="Ask your question...">
+            <br></br>
+            <img class="8ball-image" src="./images/8.png" alt="My magic 8 Ball">
+            <br></br>
+            <button class='magic8-input' onclick="magic8()">Shake</button>
+            <br></br>
+            <br></br>
+            <p id='magic8-answer'>Awaiting your questions deary...</p>
+            <br></br>
+        </div>
+        <br></br>
+        <br></br>
+
+    </div>
+</body>
+
+</html>
