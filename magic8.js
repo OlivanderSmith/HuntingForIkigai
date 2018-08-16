@@ -20,7 +20,7 @@ const magic8 = () => {
   if (input.value === "") {
     output.innerHTML = "Did you ask a question?";
     input.classList.add("missing-question");
-    setTimeout(() => input.classList.remove("missing-question"), 3000);
+    setTimeout(() => input.classList.remove("missing-question"), 1000);
   } else {
     document.getElementById("8BallOutput").innerHTML =
       arr[Math.floor(Math.random() * 8)];
