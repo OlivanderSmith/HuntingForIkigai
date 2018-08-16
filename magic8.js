@@ -9,6 +9,20 @@ arr = [
   "yeh, I'll get on that"
 ];
 
-const magic8 = () =>
-  (document.getElementById("magic8-answer").innerHTML =
-    arr[Math.floor(Math.random() * 8)]);
+const magic8 = () => {
+  const input = document.getElementById("magic8-input");
+
+  const output = document.getElementById("8BallOutput");
+
+  if (!input || !output) {
+    return console.log("missing element");
+  }
+  if (input.value === "") {
+    output.innerHTML = "Did you ask a question?";
+    input.classList.add("missing-question");
+    setTimeout(() => input.classList.remove("missing-question"), 3000);
+  } else {
+    document.getElementById("8BallOutput").innerHTML =
+      arr[Math.floor(Math.random() * 8)];
+  }
+};

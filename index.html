@@ -4,8 +4,8 @@
 
 <head>
     <title>Oliver Smith | Hunting for Ikigai</title>
-    <link href="./ikigai.css" type="text/css" rel="stylesheet">
-    <script src='./magic8.js' type='text/javascript' /></script>
+    <link href="/ikigai.css" type="text/css" rel="stylesheet">
+    <script src='/magic8.js' type='text/javascript' /></script>
     <link rel="icon" href="https://dumielauxepices.net/sites/default/files/hand-emoji-clipart-single-hand-632544-492960.png">
 </head>
 <!-- Body starts here-->
@@ -83,14 +83,15 @@
             <p>I've embedded some magical power into this code... Ask the 8 Ball a question</p>
             <br></br>
 
-            <input class='magic8-input' type="text" name="magic8-question" placeholder="Ask your question...">
+            <input id='magic8-input' class='magic8-input' type="text" name="magic8-question" placeholder="Ask your question...">
             <br></br>
-            <img class="8ball-image" src="./images/8.png" alt="My magic 8 Ball">
+            <div class='magic8-answer'>
+                <div class="ewin"></div>
+                <p id='8BallOutput'>Awaiting your questions deary...</p>
+                <img class='white8' src="./images/white8.png" alt="My magic 8">
+            </div>
             <br></br>
-            <button class='magic8-input' onclick="magic8()">Shake</button>
-            <br></br>
-            <br></br>
-            <p id='magic8-answer'>Awaiting your questions deary...</p>
+            <button class='shake-button' onclick="magic8()">Shake</button>
             <br></br>
         </div>
         <br></br>
