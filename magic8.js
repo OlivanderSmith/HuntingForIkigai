@@ -1,3 +1,7 @@
+// Enter key support for Magic 8 input box
+
+const add = (a, b) => a + b;
+//Array for magic 8 output
 arr = [
   "Maybe have a Guinness?",
   "The grass is always greener in Ireland",
@@ -9,6 +13,7 @@ arr = [
   "yeh, I'll get on that"
 ];
 
+// Magic 8 function
 const magic8 = () => {
   const input = document.getElementById("magic8-input");
 
@@ -26,3 +31,9 @@ const magic8 = () => {
       arr[Math.floor(Math.random() * 8)];
   }
 };
+
+document.getElementById("magic8-input").addEventListener("keydown", event => {
+  if (event.key === "Enter") {
+    magic8();
+  }
+});
