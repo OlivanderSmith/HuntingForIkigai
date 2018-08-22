@@ -2,7 +2,6 @@
   font-family: Arial;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -14,6 +13,12 @@ body {
 
 button {
   cursor: pointer;
+  font: bold 16px Arial;
+  background-color: #f3f3f3;
+  color: #333333;
+  padding: 20px;
+  border-radius: 12px;
+  text-decoration: none;
 }
 
 .introduction {
@@ -31,7 +36,6 @@ button {
 @media screen and (max-width: 900px) {
   .introduction {
     text-align: center;
-    height: 100vh;
     background-image: url("./images/bridgemob.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -104,12 +108,6 @@ button {
   max-width: 100%;
 }
 
-@media screen and (max-width: 900px) {
-  .portfolio {
-    display: block;
-  }
-}
-
 .portfolio-header {
   height: 20vh;
   background: #333333;
@@ -121,15 +119,16 @@ button {
 }
 
 @media screen and (min-width: 900px) {
-  .portfolio-header {
+  .portfolio .portfolio-header {
     display: block;
     width: 100%;
-    max-height: 50px;
+    max-height: 10vh;
   }
 }
 
 .portfolio-flexbox {
   height: 350px;
+  width: auto;
   background: #333333;
   display: flex;
   justify-content: space-around;
@@ -138,8 +137,9 @@ button {
 @media screen and (max-width: 900px) {
   .portfolio-flexbox {
     display: block;
-    width: 50%;
     justify-content: center;
+    height: 100vh;
+    width: auto;
   }
 }
 
@@ -160,6 +160,14 @@ button {
   color: #333333;
   text-decoration: none;
   margin: 20% 10%;
+}
+
+@media screen and (max-width: 900px) {
+  .portfolio-flexbox .button {
+    display: block;
+    width: 30vh;
+    margin: 0 50%;
+  }
 }
 
 .portfolio-image {
@@ -210,7 +218,14 @@ button {
   border-radius: 10px;
   color: #333333;
   text-decoration: none;
-  margin: 10% 3%;
+}
+
+@media screen and (min-width: 900px) {
+  .codewars-div.button {
+    display: block;
+    width: 100%;
+    margin: 10% 50%;
+  }
 }
 
 .fcc-div {
@@ -264,6 +279,14 @@ button {
   text-decoration: none;
 }
 
+@media screen and (max-width: 900px) {
+  .magic8-input {
+    width: 15vh;
+    height: auto;
+    font-size: 8px;
+  }
+}
+
 .magic8-answer {
   justify-content: space-around;
   text-align: center;
@@ -279,13 +302,22 @@ button {
     inset 0px -20px 20px rgba(60, 0, 60, 1);
 }
 
+@media screen and (max-width: 900px) {
+  .magic8-answer {
+    display: block;
+    width: 25vh;
+    height: 25vh;
+    font-size: 7px;
+  }
+}
+
 .magic8-answer p {
   margin: 75px auto 0 auto;
   background-color: white;
-  padding: 50px 0px 0px 0px;
+  padding: 45px 0px 0px 0px;
   border-radius: 100%;
   width: 40%;
-  height: 40%;
+  height: 30%;
   color: #333333;
   box-shadow: inset -10px 10px 50px rgba(255, 255, 255, 0.4),
     inset 5px -5px 50px rgb(138, 138, 138),
@@ -293,47 +325,59 @@ button {
     inset 0px -20px 20px rgb(71, 0, 71);
 }
 
+@media screen and (max-width: 900px) {
+  .magic8-answer p {
+    padding: 28px 0px 0px 0px;
+    margin: 25px auto 0 auto;
+  }
+}
+
 .white8 {
   height: 40%;
   width: auto;
 }
 
-.shake-button {
-  font: bold 16px Arial;
-  background-color: #f3f3f3;
-  color: #333333;
-  padding: 20px;
-  border-radius: 12px;
-  text-decoration: none;
-}
-
-.missing-question {
-  animation: shake 1s;
-
-  animation-iteration-count: inherit;
-}
-
-@-webkit-keyframes shake {
-  from,
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    -webkit-transform: translate3d(-10px, 0, 0);
-    transform: translate3d(-10px, 0, 0);
-  }
-
-  20%,
-  40%,
-  60%,
-  80% {
-    -webkit-transform: translate3d(10px, 0, 0);
-    transform: translate3d(10px, 0, 0);
+@media screen and (max-width: 900px) {
+  .white8 {
+    height: 40%;
+    width: auto;
   }
 }
+
+  button {
+    font: bold 16px Arial;
+    background-color: #f3f3f3;
+    color: #333333;
+    padding: 20px;
+    border-radius: 12px;
+    text-decoration: none;
+  }
+
+  .missing-question {
+    animation: shake 1s;
+    animation-iteration-count: inherit;
+  }
+
+  @-webkit-keyframes shake {
+    from,
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      -webkit-transform: translate3d(-10px, 0, 0);
+      transform: translate3d(-10px, 0, 0);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+      -webkit-transform: translate3d(10px, 0, 0);
+      transform: translate3d(10px, 0, 0);
+    }

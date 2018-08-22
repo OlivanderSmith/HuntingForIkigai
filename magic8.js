@@ -1,6 +1,3 @@
-// Enter key support for Magic 8 input box
-
-const add = (a, b) => a + b;
 //Array for magic 8 output
 arr = [
   "Maybe have a Guinness?",
@@ -19,9 +16,6 @@ const magic8 = () => {
 
   const output = document.getElementById("8BallOutput");
 
-  if (!input || !output) {
-    return console.log("missing element");
-  }
   if (input.value === "") {
     output.innerHTML = "Did you ask a question?";
     input.classList.add("missing-question");
@@ -32,6 +26,7 @@ const magic8 = () => {
   }
 };
 
+// Enter key support for Magic 8 input box
 document.getElementById("magic8-input").addEventListener("keydown", event => {
   if (event.key === "Enter") {
     magic8();
