@@ -23,6 +23,7 @@ const magic8 = () => {
   } else {
     document.getElementById("8BallOutput").innerHTML =
       arr[Math.floor(Math.random() * 8)];
+    document.getElementById("magic8-input").value = "";
   }
 };
 
