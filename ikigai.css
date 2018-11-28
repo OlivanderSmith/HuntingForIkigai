@@ -57,20 +57,14 @@ button {
   bottom: 40px;
 }
 
-@media screen and (min-width: 900px) {
-  .mobile-view-ikigai-link{
+@media screen and (max-width: 900px) {
+  .desktop-view-ikigai-link {
     display: none;
   }
 }
 
 @media screen and (max-width: 900px) {
-  .desktop-view-ikigai-link{
- display: none;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .mobile-view-ikigai-link{
+  .mobile-view-ikigai-link {
     color: #f3f3f3;
     text-decoration: none;
     position: absolute;
@@ -79,6 +73,12 @@ button {
     text-align: center;
     position: absolute;
     bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .mobile-view-ikigai-link {
+    display: none;
   }
 }
 
@@ -92,6 +92,16 @@ button {
   border: 0;
   padding: 0;
   font-size: 82px;
+}
+
+@media screen and (max-width: 900px) {
+  .page-title {
+    color: #f3f3f3;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-size: 60px;
+  }
 }
 
 .page-title-description {
@@ -129,43 +139,27 @@ button {
   float: left;
 }
 
-.portfolio {
-  max-width: 100%;
-}
-
 .portfolio-header {
-  height: 20vh;
   background: #333333;
   display: flex;
   color: #f3f3f3;
-  width: 100%;
-  justify-content: space-around;
-  padding: 50px 0px 0px 0px;
-}
-
-@media screen and (min-width: 900px) {
-  .portfolio .portfolio-header {
-    display: block;
-    width: 100%;
-    max-height: 10vh;
-  }
+  width: auto;
+  padding: 10px 40px;
 }
 
 .portfolio-flexbox {
-  height: 350px;
+  height: auto;
   width: auto;
   background: #333333;
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
 }
 
-@media screen and (max-width: 900px) {
-  .portfolio-flexbox {
-    display: block;
-    justify-content: center;
-    height: 100vh;
-    width: auto;
-  }
+.col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .portfolio-text {
@@ -178,91 +172,37 @@ button {
 }
 
 .portfolio-flexbox .button {
+  display: flex;
+  justify-content: center;
   font: bold 16px Arial;
   background-color: #f3f3f3;
-  padding: 20px;
   border-radius: 12px;
   color: #333333;
   text-decoration: none;
-  margin: 20% 10%;
-}
-
-@media screen and (max-width: 900px) {
-  .portfolio-flexbox .button {
-    display: block;
-    width: 30vh;
-    margin: 0 50%;
-  }
+  padding: 10px;
+  margin: 4% 20%;
 }
 
 .portfolio-image {
-  max-width: 50vh;
-  max-height: auto;
-  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  width: 50vh;
+  vertical-align: middle;
+  margin: 0 auto;
 }
 
-@media screen and (max-width: 900px) {
-  .portfolio-image {
-    display: block;
-    max-width: 40vh;
-    text-align: center;
-    padding-left: 20%;
-  }
+.undisciplinedImage {
+  display: flex;
+  margin: 10% auto;
 }
 
-.github-div {
-  justify-content: center;
-  text-align: center;
-  width: 30%;
-}
-
-@media screen and (min-width: 900px) {
-  .github-div {
-    display: block;
-    width: 100%;
-  }
-}
-
-.codewars-div {
-  justify-content: center;
-  text-align: center;
-  width: 30%;
-}
-
-@media screen and (min-width: 900px) {
-  .codewars-div {
-    display: block;
-    width: 100%;
-  }
-}
-
-.codewars-div .button {
-  font: bold 16px Arial;
-  background-color: #f3f3f3;
-  padding: 12px;
-  border-radius: 10px;
-  color: #333333;
-  text-decoration: none;
-}
-
-@media screen and (min-width: 900px) {
-  .codewars-div.button {
-    display: block;
-    width: 100%;
-    margin: 10% 50%;
-  }
-}
-
-.fcc-div {
-  justify-content: center;
-  text-align: center;
-  width: 30%;
-}
-
-@media screen and (min-width: 900px) {
-  .fcc-div {
-    display: block;
-    width: 100%;
+@media only screen and (max-width: 950px) {
+  .portfolio-flexbox {
+    height: auto;
+    width: auto;
+    background: #333333;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -369,40 +309,41 @@ button {
   }
 }
 
-  button {
-    font: bold 16px Arial;
-    background-color: #f3f3f3;
-    color: #333333;
-    padding: 20px;
-    border-radius: 12px;
-    text-decoration: none;
+button {
+  font: bold 16px Arial;
+  background-color: #f3f3f3;
+  color: #333333;
+  padding: 20px;
+  border-radius: 12px;
+  text-decoration: none;
+}
+
+.missing-question {
+  animation: shake 1s;
+  animation-iteration-count: inherit;
+}
+
+@-webkit-keyframes shake {
+  from,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 
-  .missing-question {
-    animation: shake 1s;
-    animation-iteration-count: inherit;
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
   }
 
-  @-webkit-keyframes shake {
-    from,
-    to {
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
-
-    10%,
-    30%,
-    50%,
-    70%,
-    90% {
-      -webkit-transform: translate3d(-10px, 0, 0);
-      transform: translate3d(-10px, 0, 0);
-    }
-
-    20%,
-    40%,
-    60%,
-    80% {
-      -webkit-transform: translate3d(10px, 0, 0);
-      transform: translate3d(10px, 0, 0);
-    }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
