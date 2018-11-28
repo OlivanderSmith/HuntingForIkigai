@@ -196,7 +196,7 @@ button {
   margin: 10% auto;
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 980px) {
   .portfolio-flexbox {
     height: auto;
     width: auto;
