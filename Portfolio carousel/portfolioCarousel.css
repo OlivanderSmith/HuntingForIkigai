@@ -1,11 +1,3 @@
-.portfolio-header {
-  background: #333333;
-  display: flex;
-  color: #f3f3f3;
-  width: auto;
-  padding: 10px 40px;
-}
-
 .carousel {
   display: flex;
   width: 100%;
@@ -17,7 +9,8 @@
 
 .carousel-slide {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   height: inherit;
   flex-shrink: 0;
@@ -32,13 +25,19 @@
 }
 
 .carousel-slide.slide-2 {
-  background-color: gray;
+  background-color: #5dbfc8;
   color: beige;
   width: 100%;
 }
 
 .carousel-slide.slide-3 {
-  background-color: #999999;
+  background-color: #b4b4b4;
+  color: beige;
+  width: 100%;
+}
+
+.carousel-slide.slide-4 {
+  background-color: #60d3a2;
   color: beige;
   width: 100%;
 }
@@ -53,6 +52,10 @@
 
 .carousel-slide.slide-order-3 {
   order: 2;
+}
+
+.carousel-slide.slide-order-4 {
+  order: 3;
 }
 
 .arrow {
@@ -124,14 +127,6 @@ a {
   overflow: hidden;
 }
 
-.col {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0 0 45px 0;
-}
-
 .portfolio-text {
   text-align: center;
   color: #f3f3f3;
@@ -144,25 +139,35 @@ a {
 .portfolio-flexbox .button {
   display: flex;
   justify-content: center;
+  align-items: center;
   font: bold 16px Arial;
   background-color: #f3f3f3;
   border-radius: 12px;
   color: #333333;
   text-decoration: none;
-  padding: 10px;
-  margin: 4% 20%;
-}
-
-.portfolio-image {
-  width: 60%;
-  margin: 10 auto;
-}
-
-button {
-  font: bold 16px Arial;
-  background-color: #f3f3f3;
-  color: #333333;
   padding: 20px;
-  border-radius: 12px;
-  text-decoration: none;
+  margin-bottom: 5%;
+}
+
+.slide-1 .portfolio-image {
+  height: 75%;
+  max-width: 90%;
+}
+
+.slide-2 .portfolio-image {
+  width: 70%;
+  margin-top: 8%;
+  max-width: 90%;
+}
+
+.slide-3 .portfolio-image {
+  width: 80%;
+  margin-top: 9%;
+  max-width: 90%;
+}
+
+.slide-4 .portfolio-image {
+  height: 45%;
+  margin-top: 7%;
+  max-width: 90%;
 }

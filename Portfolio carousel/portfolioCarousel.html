@@ -9,34 +9,33 @@
 
   <body>
     <div class="portfolio-flexbox" id="body">
-      <div id="slide-a" class="carousel-slide slide-1 slide-order-1 col">
+      <!-- SLIDE 1 github -->
+      <div id="slide-a" class="carousel-slide slide-1 slide-order-1">
         <img class="portfolio-image" src="./images/github-logo.png" />
 
         <a
           class="button"
           href="https://github.com/OlivanderSmith/huntingforikigai"
           target="_blank"
-          >My Repositories</a
+          >My GitHub Repositories</a
         >
       </div>
-      <div id="slide-b" class="carousel-slide slide-2 slide-order-2 col">
+
+      <!-- SLIDE 2 codewars -->
+      <div id="slide-b" class="carousel-slide slide-2 slide-order-2">
         <img class="portfolio-image" src="./images/codewars.png" />
 
         <a
           class="button"
           href="https://www.codewars.com/users/OlivanderSmith"
           target="_blank"
-          >My Profile</a
-        >
-        <a
-          class="button"
-          href="https://www.codewars.com/kata/5b71b8678adeae2fb0000103"
-          target="_blank"
-          >My Kata</a
+          >My CodeWars Profile</a
         >
       </div>
-      <div id="slide-c" class="carousel-slide slide-3 slide-order-3 col">
-        <img class="portfolio-image" src="./images/fcc-logo.png" />
+
+      <!-- SLIDE 3 freecodecamp -->
+      <div id="slide-c" class="carousel-slide slide-3 slide-order-3">
+        <img class="portfolio-image" src="./images/freecodecamp_logo.svg" />
 
         <a
           class="button"
@@ -45,9 +44,24 @@
           >My FCC profile</a
         >
       </div>
+
+      <!-- SLIDE 4 codepen -->
+      <div id="slide-d" class="carousel-slide slide-4 slide-order-4">
+        <img class="portfolio-image" src="./images/codepenLOGO.png" />
+
+        <a
+          class="button"
+          href="https://codepen.io/olivandersmith/pen/PxVOmW"
+          target="_blank"
+          >My Carousel on CodePen</a
+        >
+      </div>
+
+      <!-- ARROWS -->
       <a class="arrow arrow-left" onclick="leftArrow()"><</a>
       <a class="arrow arrow-right" onclick="rightArrow()">></a>
 
+      <!-- SCRIPTS -->
       <script src="portfolioCarousel.js"></script>
     </div>
   </body>
