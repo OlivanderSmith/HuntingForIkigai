@@ -17232,6 +17232,7 @@ contain: style size layout;\
 background-color: gray;\
 }\
 .ace_gutter-active-line {\
+position: absolute;\
 left: 0;\
 right: 0;\
 background-color: gray;\
