@@ -97,35 +97,52 @@
 </div>
 
     <!--JUST FOR FUN-->
+
+
     <div class='jff'>
-
         <h1 class='jff-header'> Just for fun...</h1>
-
-        <div class='magic8' class='flex-container'>
-            <br></br>
-            <h2> Magic 8</h2>
-            <br></br>
-            <p>I've embedded some magical power into this code... Ask the 8 Ball a question</p>
-            <br></br>
-
+        <div class='magic8' class='flex-container'> 
+            <h2 class="magic8-header"> Magic 8</h2>
+            <p class="magic8-P">I've embedded some magical power into this code... Ask the 8 Ball a question</p>
             <input id='magic8-input' class='magic8-input' type="text" name="magic8-question" placeholder="Ask your question...">
-            <br></br>
             <div class='magic8-answer'>
                 <div class="ewin"></div>
-                <p id='8BallOutput'>Awaiting your questions deary...</p>
+                <p id='8BallOutput'>Awaiting your questions, deary...</p>
                 <img class='white8' src="./images/white8.png" alt="My magic 8">
             </div>
-            <br></br>
             <button class='shake-button' onclick="magic8()">Shake</button>
-            <br></br>
         </div>
-        <br></br>
-        <br></br>
+        <div class="vanillaJS-server">
+            <h2 class="server-header">Vanilla JavaScript server</h2>
+            <p class="server-p">zero packages localhost server for simple dev projects...like this site </p>
+            <div id="editor">const http = require("http");
+const fs = require("fs");
+const hostname = "127.0.0.1";
+const port = 3000;
 
+fs.readFile("server.html", (error, html) => {
+  if (error) {
+  throw error;
+  }
+  const server = http.createServer((request, response) => {
+    response.statusCode = 200;
+    response.setHeader("Content-type", "text/html");
+    response.write(html);
+    response.end();
+  });
+
+  server.listen(port, hostname, () => {
+    console.log("server started on port " + port);
+    });
+});</div>
+        </div>
     </div>
     <!--SCRIPTS-->
     <script src='/magic8.js' type='text/javascript' /></script>
     <script src="/portfolioCarousel.js" type='text/javascript'></script>
+    <script src="/ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script>  var editor = ace.edit("editor"); editor.setTheme("ace/theme/monokai"); editor.session.setMode("ace/mode/javascript");
+</script>
 </body>
 
 </html>
