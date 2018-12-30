@@ -45,6 +45,7 @@ a {
     background-size: cover;
     width: 100%;
     justify-content: center;
+    height: 110vh;
   }
 
   .desktop-view-ikigai-link {
@@ -156,8 +157,8 @@ a {
     text-align: center;
   }
 
-  h2.aboutme-text {
-    margin-top: 5%;
+  .aboutme-text h2 {
+    margin-top: 10%;
   }
 }
 
@@ -168,11 +169,11 @@ a {
 }
 
 .portfolio-header {
-  background-color: slategray;
-  display: flex;
   color: #f3f3f3;
-  width: auto;
-  padding: 10px 40px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  z-index: 10;
 }
 
 .carousel {
@@ -244,6 +245,7 @@ a {
   cursor: pointer;
   transition: all 0.5s;
   padding: 200px 20px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .arrow:hover {
@@ -324,26 +326,26 @@ a {
 
 .slide-1 .portfolio-image {
   max-height: 75%;
-  margin-top: 4%;
+  margin-top: 8%;
   max-width: 50%;
 }
 
 .slide-2 .portfolio-image {
   max-width: 70%;
-  margin-top: 8%;
+  margin-top: 12%;
   max-width: 50%;
 }
 
 .slide-3 .portfolio-image {
   max-width: 80%;
-  margin-top: 8%;
+  margin-top: 12%;
   max-width: 50%;
   min-width: 75%;
 }
 
 .slide-4 .portfolio-image {
   max-height: 45%;
-  margin-top: 8%;
+  margin-top: 12%;
   max-width: 50%;
 }
 
@@ -359,11 +361,13 @@ a {
   }
 
   .portfolio-flexbox {
-    height: 40vh;
+    height: 45vh;
   }
 
   h1.portfolio-header {
-    font-size: 4.5vh;
+    top: 10px;
+    left: 10px;
+    font-size: 3.75vh;
   }
 
   h2 {
@@ -497,7 +501,7 @@ a {
 @media screen and (max-width: 900px) {
   .jff {
     width: 100%;
-    height: 160vh;
+    height: 180vh;
   }
 
   .jff-header {
@@ -598,18 +602,45 @@ button {
 }
 
 #editor {
-  height: 79vh;
+  height: 74.9vh;
   margin: 10px;
+}
+
+.server-header {
+  font-size: 4vh;
+  margin: 10px;
+}
+
+.server-p {
+  font-size: 2.5vh;
+  margin: 30px 0 40px 0;
+}
+
+.ace_gutter {
+  width: 15px;
 }
 
 @media screen and (max-width: 900px) {
   .vanillaJS-server {
-    margin: 2% 10%;
+    margin: 10% 10%;
   }
 
   .ace_gutter {
-    width: 20px;
+    width: 15px;
   }
 
- 
+  #editor {
+    height: 62vh;
+    margin: 10px 0;
+    font-size: 15px;
+  }
+
+  .server-header {
+    font-size: 20px;
+    margin: 10px;
+  }
+
+  .server-p {
+    margin: 15px;
+  }
 }

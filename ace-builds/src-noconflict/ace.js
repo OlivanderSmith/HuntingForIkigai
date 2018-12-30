@@ -17245,8 +17245,8 @@ position: absolute;\
 top: 0;\
 left: 0;\
 right: 0;\
-padding-left: 19px;\
-padding-right: 6px;\
+padding-left: 0px;\
+padding-right: 0px;\
 background-repeat: no-repeat;\
 background-color: gray;\
 color: white;\
