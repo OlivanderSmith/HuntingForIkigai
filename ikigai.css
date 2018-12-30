@@ -396,6 +396,7 @@ a {
   background-image: url("./images/magic8.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
+  height: 250vh;
 }
 
 .jff-header {
