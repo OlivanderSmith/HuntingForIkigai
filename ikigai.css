@@ -4,13 +4,6 @@
   padding: 0;
 }
 
-body {
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100%;
-  background-size: cover;
-}
-
 h1 {
   font-size: 40px;
 }
@@ -32,7 +25,11 @@ a {
   background-size: 100%;
   background-size: cover;
   width: 100%;
-  justify-content: center;
+  z-index: -10;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 @media screen and (max-width: 900px) {
@@ -41,11 +38,9 @@ a {
     background-image: url("./images/bridgemob.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100%;
     background-size: cover;
     width: 100%;
     justify-content: center;
-    height: 110vh;
   }
 
   .desktop-view-ikigai-link {
@@ -412,10 +407,13 @@ a {
   background-image: url("./images/magic8.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100%;
   background-size: cover;
   width: 100%;
   height: 100%;
+  z-index: -9;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 .jff-header {
