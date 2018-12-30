@@ -602,17 +602,21 @@ button {
 
 @media screen and (max-width: 900px) {
   .vanillaJS-server {
+    position: relative;
     margin: 10% 10%;
+    overflow: hidden;
   }
 
   .ace_gutter {
     width: 15px;
+    overflow: hidden;
   }
 
   #editor {
-    height: 62vh;
+    height: 69vh;
     margin: 10px 0;
     font-size: 15px;
+    overflow: hidden;
   }
 
   .server-header {

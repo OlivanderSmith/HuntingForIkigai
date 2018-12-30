@@ -113,7 +113,7 @@
         <div class="vanillaJS-server">
             <h2 class="server-header">Vanilla JavaScript server</h2>
             <p class="server-p">zero packages localhost server for simple dev projects...like this site </p>
-            <div id="editor">const http = require("http");
+            <div scroll="no" id="editor">const http = require("http");
 const fs = require("fs");
 const hostname = "127.0.0.1";
 const port = 3000;
@@ -132,7 +132,9 @@ fs.readFile("server.html", (error, html) => {
   server.listen(port, hostname, () => {
     console.log("server started on port " + port);
     });
-});</div>
+});
+
+</div>
         </div>
     </div>
     <!--SCRIPTS-->
