@@ -29,6 +29,7 @@ a {
 @media screen and (max-width: 900px) {
   .introduction {
     background-image: url("./images/bridgemob.jpg");
+    background-size: cover;
   }
 
   .desktop-view-ikigai-link {
@@ -395,13 +396,6 @@ a {
   background-image: url("./images/magic8.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  z-index: -9;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
 }
 
 .jff-header {
@@ -486,8 +480,8 @@ a {
 
 @media screen and (max-width: 900px) {
   .jff {
-    width: 100%;
     height: 180vh;
+    background-size: cover;
   }
 
   .jff-header {
